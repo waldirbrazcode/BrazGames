@@ -3,30 +3,14 @@ import React from "react";
 const Landing = () => {
   return (
     <>
-      <div className="flex justify-between relative top-24 pl-12 pt-8 gap-12">
-        <div>
-          <h2 className="def-text font-[Lato] font-bold text-[50px]">
-            Welcome to BrazGames!
+      <div className="flex flex-col justify-center relative top-24 pt-36 gap-22">
+        <div className="flex justify-center px-10">
+          <h2 className="max-w-4xl def-text font-[BBH Sans Bogle] font-bold text-center text-[min(12vw,5rem)]">
+            Free Games to play and have fun
           </h2>
-
-          <h3 className="def-text font-[Lato] font-bold text-[30px]">
-            Find cool games to play
-          </h3>
-
-          <h4 className="def-text font-[Lato] font-bold text-[20px] mt-4 max-w-2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            perspiciatis inventore similique dolorum soluta fuga sit,
-            perferendis sapiente officiis corrupti rerum reprehenderit at.
-            Laborum incidunt sed maxime fugiat alias dolor?
-          </h4>
         </div>
 
-        <div className="bg-gray-800 w-[50vw] h-[700px] rounded-l-2xl p-6">
-          <h1 className="def-text font-[Roboto] text-[20px] mb-2">
-            Update Panel
-          </h1>
-          <p className="def-text font-[Roboto]">[2025-10-17] Site release!</p>
-        </div>
+        <div className="bg-emerald-600 w-full h-[52vh] mask-t-from-75% mask-radial-at-bottom mask-radial-from-5%"></div>
       </div>
     </>
   );

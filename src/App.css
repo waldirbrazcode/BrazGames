@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-body{
-    background-color: rgb(37, 37, 37)
-}
-
 @layer components{
     .pointer{
         @apply cursor-pointer
@@ -11,5 +7,11 @@ body{
 
     .def-text{
         @apply text-white
+    }
+}
+
+@layer base{
+    body{
+        @apply bg-neutral-950
     }
 }

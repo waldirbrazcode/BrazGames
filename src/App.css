@@ -8,6 +8,22 @@
     .def-text{
         @apply text-white
     }
+
+    .game-container{
+        @apply mt-10 p-6 flex justify-between h-[800px] gap-8 max-lg:flex-col max-lg:items-center
+    }
+
+    .instructions{
+        @apply flex flex-col max-w-2xl gap-6
+    }
+
+    .game{
+        @apply bg-neutral-800 w-[60vw] rounded-[20px] p-3 max-lg:w-full max-lg:h-[600px]
+    }
+
+    .game-ui{
+        @apply flex justify-center items-center h-full
+    }
 }
 
 @layer base{

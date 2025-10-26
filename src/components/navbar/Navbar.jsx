@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { GiTicTacToe } from "react-icons/gi";
+import { createContext, useState } from "react";
 import { HiCursorClick } from "react-icons/hi";
-import {
-  MdOutlineKeyboardDoubleArrowDown,
-  MdOutlineKeyboardDoubleArrowUp,
-} from "react-icons/md";
+import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 import { BiMath } from "react-icons/bi";
+import GameContainer from "../game-container/GameContainer";
+import Games from "../games/Games";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [showNav, setShowNav] = useState(true);
+  const [selectedGame, setSelectedGame] = useState(null);
+  console.log(selectedGame);
 
   return (
     <>
@@ -19,13 +19,18 @@ const Navbar = () => {
       >
         <div className="flex gap-6 pointer">
           <a href="#">
-            <GiTicTacToe size={50} className="bg-blur" />
+            <HiCursorClick
+              onClick={() => setSelectedGame(props.games.Clicker)}
+              size={50}
+              className="bg-blur"
+            />
           </a>
           <a href="#">
-            <HiCursorClick size={50} className="bg-blur" />
-          </a>
-          <a href="#">
-            <BiMath size={50} className="bg-blur" />
+            <BiMath
+              onClick={() => setSelectedGame(props.games.Math)}
+              size={50}
+              className="bg-blur"
+            />
           </a>
         </div>
 

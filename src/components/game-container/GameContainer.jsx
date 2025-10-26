@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { MdFullscreen } from "react-icons/md";
 import { FaPlay } from "react-icons/fa";
 
-const TicTacToe = () => {
+const GameContainer = (props) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
   return (
     <>
       <div className="game-container">
@@ -12,22 +14,17 @@ const TicTacToe = () => {
           <h3>
             <ul className="list-decimal text-2xl list-inside">
               <li>Click on the game you want to play on game bar</li>
-              <li>
-                Click on <FaPlay className="inline" size={30} color="white" />
-              </li>
               <li>Have fun!</li>
             </ul>
           </h3>
         </div>
 
         <div className="game">
-          <div className="game-ui">
-            <FaPlay size={80} color="white" />
-          </div>
+          <div className="game-ui">{props.game}</div>
         </div>
       </div>
     </>
   );
 };
 
-export default TicTacToe;
+export default GameContainer;

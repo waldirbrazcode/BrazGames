@@ -3,7 +3,7 @@ import { MdFullscreen } from "react-icons/md";
 import { FaPlay } from "react-icons/fa";
 import Games from "../games/Games";
 import Clicker from "../games/Clicker/Clicker";
-import Math from "../games/Math/Math";
+import MathGame from "../games/Math/Math";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
 const GameContainer = (props) => {
@@ -63,7 +63,7 @@ const GameContainer = (props) => {
 
           <FullScreen className="game" handle={fullscreen}>
             <div className="game-ui">
-              <Math></Math>
+              <MathGame></MathGame>
             </div>
           </FullScreen>
         </div>

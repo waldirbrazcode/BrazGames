@@ -1,8 +1,7 @@
 import Navbar from "./components/navbar/Navbar";
 import Landing from "./components/landing/Landing";
 import GameContainer from "./components/game-container/GameContainer";
-import Games from "./components/games/Games";
-import { createContext, useState } from "react";
+import { useState } from "react";
 import { HiCursorClick } from "react-icons/hi";
 import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 import { BiMath } from "react-icons/bi";
@@ -20,14 +19,14 @@ function App() {
       >
         <div className="flex gap-6 pointer">
           <HiCursorClick
-            onClick={() => setSelectedGame(Games.Clicker)}
+            onClick={() => setSelectedGame("clicker")}
             size={50}
-            className={selectedGame === Games.Clicker ? "border-b-2" : ""}
+            className={selectedGame === "clicker" ? "border-b-2" : ""}
           />
           <BiMath
-            onClick={() => setSelectedGame(Games.Math)}
+            onClick={() => setSelectedGame("math")}
             size={50}
-            className={selectedGame === Games.Math ? "border-b-2" : ""}
+            className={selectedGame === "math" ? "border-b-2" : ""}
           />
         </div>
 
